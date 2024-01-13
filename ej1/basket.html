@@ -1,0 +1,142 @@
+<head>
+    <title>Secta de basket</title>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *
+        {
+            margin: 0;    
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body::before {
+            content: "";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/imgs/basketbg.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.25; /* Ajusta la opacidad según tus preferencias, 1 es completamente opaco, 0 es completamente transparente */
+            z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+        }
+
+        header
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 3em;
+            margin-bottom: 7em;
+
+        }
+        header div 
+        {
+            display: flex;
+            flex-direction: row;
+        } 
+        header div a {
+            margin-left: 3em; 
+            margin-right: 3em;
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        section#home
+        {
+            font-size: 3em;
+            margin-bottom: 3em;     
+        }
+
+        article#info
+        {
+            font-size: 2.5em; 
+        } article#info section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3em;
+            transition: 0.2s;  
+        } article#info img { border-style: ridge; border-radius: 25%; } 
+
+        article#info section#comparison 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        } 
+
+        article#info section#habilities 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <div>
+            <a href="#basket">Baloncesto</a>
+            <a href="#ajedrez">Ajedrez</a>
+            <a href="#kickboxing">Kickboxing</a>
+        </div>
+   </header>
+
+    <section id="home">
+        <h1 style="text-align: center;">SECTA <br> BASKETBALL</h1>
+        <h3 style="text-align: center;"> La mejor zona para aprender BASKETBALL<br> en tu barrio</h3>
+    </section> 
+
+  <article id="info">
+
+    <section id="main">
+
+        <p style="text-align: center; margin: 0 1.25em;"> ¡Bienvenido a nuestro gran curso de Basketball!
+        <p style="text-align: center; margin: 0 1.25em;"> En este curso no solo aprenderás las habilidades fundamentales del baloncesto, sino que también experimentarás una transformación total en tu juego y tu confianza en el terreno de juego.</p>  
+
+    </section>
+
+    <section id="comparison"> 
+
+        <div>
+            <p>Pasarás de esto:</p>
+            <img style="width: 400px; height: 400px;" src="imgs/elLuis.jpg" alt="el luis cayendo jaja que pringao">
+        </div>
+
+        <div>
+            <p>A esto:</p>
+            <img style="width: 400px; height: 400px;" src="https://media4.giphy.com/media/xTiTnpcaFPfJAzaP8A/giphy.gif" alt="el luis haciendo mate en la canasta pequeña de la marina">
+        </div>
+
+    </section>
+
+    <section id="habilities">
+
+        <p style="font-weight: bold;">¿Qué obtendrás de nuestras clases?</p>
+        <ul>
+            <li>Fundamentos SÓLIDOS</li>
+            <li>Desarrollo FÍSICO</li>
+            <li>ESTRATEGIA de juego</li>
+            <li>Mentalidad GANADORA</li>
+            <li>Trabajo en EQUIPO</li>
+            <li>DIVERSIÓN mientras aprendes</li>
+        </ul>
+    </section>
+
+</article>
+</body>
+</html>
