@@ -2,6 +2,16 @@
 <head>
     <title>Secta de ajedrez</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *
+        {
+            margin: 0;    
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }        
+
         body::before {
             content: "";
             display: block;
@@ -10,16 +20,120 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('/imgs/chessbg.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+            background-image: url('./imgs/chessbg.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             opacity: 0.25; /* Ajusta la opacidad según tus preferencias, 1 es completamente opaco, 0 es completamente transparente */
             z-index: -1; /* Asegura que el fondo esté detrás del contenido */
         }
+
+        header
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3em;
+            margin-bottom: 7em;
+
+        }
+        header div 
+        {
+            display: flex;
+            flex-direction: row;
+        } 
+        header div a {
+            margin-left: 3em; 
+            margin-right: 3em;
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+        }
+
+        section#home
+        {
+            font-size: 3em;
+            margin-bottom: 3em;     
+        }
+
+        article#info
+        {
+            font-size: 2.5em; 
+        } article#info section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3em;
+            transition: 0.2s;  
+        } article#info img { border-style: ridge; border-radius: 25%; width: 200px; height: 200px;} 
+
+        article#info section#habilities 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } article#info section#habilities div {display: flex; width: 100%; align-items: center; justify-content: space-between; text-align: center; align-items: center; }
+        article#info section#habilities div img {margin: 0 6em;}
+        article#info section#habilities div p {margin: 0 6em; text-align: center;}
+        
     </style>
 </head>
 <body>
+ 
+<header>
+
+        <a style="text-decoration: none; color:black;" href="main.html" target="_blank">
+            <h1>SECTA DEPORTES</h1>
+        </a>
+
+        <div>
+            <a href="#main">Info</a>
+            <a href="#habilities">Resultados</a>
+        </div>
+   </header> 
+
+   <section id="home">
+    <h1 style="text-align: center;">SECTA <br> AJEDREZ</h1>
+    <h3 style="text-align: center;"> El mejor lugar para practicar y aprender AJEDREZ<br> en tu barrio</h3>
+    </section> 
+
     
+<article id="info">
+
+    <section id="main">
+
+        <p style="text-align: center; margin: 0 1.25em;"> ¡Bienvenido a nuestro maravilloso curso de Ajedrez!
+        <p style="text-align: center; margin: 0 1.25em;"> En este curso vivirás la experiencia de estar rodeado y aprender de los Grandes Maestros de este gran juego </p>  
+
+    </section>
+
+    <section id="habilities"> 
+
+        <div>
+            <img src="./imgs/ajedrez1.jpg" alt="">
+
+            <p>
+                FUNDAMENTOS del Ajedrez
+            </p>
+        </div>
+
+        <div>
+            <img src="./imgs/ajedrez2.jpg" alt="">
+
+            <p>
+                TÁCTICAS y ESTRATEGIAS Avanzadas
+            </p>
+        </div>
+
+        <div>
+            <img src="./imgs/ajedrez3.jpg" alt="">
+
+            <p>
+                Pensamiento CRÍTICO y toma de DECISIONES
+            </p>
+        </div>
+    </section>
+</article>
+
 </body>
 </html>
