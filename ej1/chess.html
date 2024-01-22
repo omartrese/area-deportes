@@ -65,16 +65,16 @@
             align-items: center;
             margin-bottom: 3em;
             transition: 0.2s;  
-        } article#info img { border-style: ridge; border-radius: 25%; width: 200px; height: 200px;} 
+        } article#info img { border-style: ridge; border-radius: 25%; width: 350px; height: 350px;} 
 
         article#info section#habilities 
         {
             display: flex;
             flex-direction: column;
             align-items: center;
-        } article#info section#habilities div {display: flex; width: 100%; align-items: center; justify-content: space-between; text-align: center; align-items: center; }
-        article#info section#habilities div img {margin: 0 6em;}
-        article#info section#habilities div p {margin: 0 6em; text-align: center;}
+        } article#info section#habilities div {display: flex; width: 100%; align-items: center; justify-content: space-around; text-align: center; align-items: center; margin-bottom: 2em;}
+        article#info section#habilities div img {margin: 0;}
+        article#info section#habilities div p {margin: 0; text-align: center; font-weight: bold;}
         
     </style>
 </head>
@@ -83,7 +83,7 @@
 <header>
 
         <a style="text-decoration: none; color:black;" href="main.html" target="_blank">
-            <h1>SECTA DEPORTES</h1>
+            <h1>ÁREA DEPORTES</h1>
         </a>
 
         <div>
@@ -93,7 +93,7 @@
    </header> 
 
    <section id="home">
-    <h1 style="text-align: center;">SECTA <br> AJEDREZ</h1>
+    <h1 style="text-align: center;">ÁREA <br> AJEDREZ</h1>
     <h3 style="text-align: center;"> El mejor lugar para practicar y aprender AJEDREZ<br> en tu barrio</h3>
     </section> 
 
@@ -107,7 +107,17 @@
 
     </section>
 
+    <section id="about">
+        <p style="text-align: center; margin: 0 2em;">
+            En este curso, destinado tanto a completos principiantes como jugadores avanzados, aprenderás muchos conceptos nuevos que podrás aplicar en tus partidas de ajedrez, teniendo un mayor control en tus partidas y grandes resultados, a base de lo que enseñamos en este curso y tus prácticas.
+        </p>
+    </section>
+
     <section id="habilities"> 
+
+        <h3 style="text-align: center; margin: 0 2em; margin-bottom: 1.25em;">
+            Algunas de las habilidades que desarrollarás en nuestro curso serán:
+        </h3>
 
         <div>
             <img src="./imgs/ajedrez1.jpg" alt="">
@@ -118,11 +128,11 @@
         </div>
 
         <div>
-            <img src="./imgs/ajedrez2.jpg" alt="">
-
             <p>
                 TÁCTICAS y ESTRATEGIAS Avanzadas
             </p>
+
+            <img src="./imgs/ajedrez2.jpg" alt="">
         </div>
 
         <div>
@@ -132,7 +142,18 @@
                 Pensamiento CRÍTICO y toma de DECISIONES
             </p>
         </div>
+
+        <div>
+            <p>
+                APERTURA, DESARROLLO de piezas y FINALES del juego
+            </p>
+
+            <img src="./imgs/ajedrez4.jpg" alt="">
+        </div>
+
     </section>
+
+
 </article>
 
 </body>

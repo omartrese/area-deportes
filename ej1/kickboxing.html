@@ -2,6 +2,16 @@
 <head>
     <title>Secta de kickboxing</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        *
+        {
+            margin: 0;    
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
         body::before {
             content: "";
             display: block;
@@ -17,9 +27,133 @@
             opacity: 0.25; /* Ajusta la opacidad según tus preferencias, 1 es completamente opaco, 0 es completamente transparente */
             z-index: -1; /* Asegura que el fondo esté detrás del contenido */
         }
+
+        header
+        {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 3em;
+            margin-bottom: 7em;
+
+        }
+        header div 
+        {
+            display: flex;
+            flex-direction: row;
+        } 
+        header div a {
+            margin-left: 3em; 
+            margin-right: 3em;
+            font-size: 26px;
+            text-decoration: none;
+            color: black;
+        }
+
+
+        section#home
+        {
+            font-size: 3em;
+            margin-bottom: 3em;     
+        }
+
+
+        article#info
+        {
+            font-size: 2.5em; 
+        } article#info section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3em;
+            transition: 0.2s;  
+        } article#info img { border-style: ridge; border-radius: 25%; } 
+
+        article#info section#comparison 
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        } 
+
+        article#info section#habilities 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        } section#habilities div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
+
+    <header>
+        <a style="text-decoration: none; color:black;" href="main.html" target="_blank">
+            <h1>ÁREA DEPORTES</h1>
+        </a>
+
+        <div>
+            <a href="#main">Info</a>
+            <a href="#habilities">Resultados</a>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 style="text-align: center;">ÁREA <br> KICKBOXING</h1>
+        <h3 style="text-align: center;"> El mejor sitio para aprender KICKBOXING<br> en tu barrio</h3>
+    </section> 
+
+
+  <article id="info">
+
+    <section id="main">
+
+        <p style="text-align: center; margin: 0 1.25em;"> ¡Bienvenido a nuestro emocionante curso de Kickboxing!
+        <p style="text-align: center; margin: 0 1.25em;"> En este curso no simplemente aprenderás defensa personal con este gran arte marcial, sino que también experimentarás la fusión de tu resistencia, agilidad y confianza a través de la eficacia del entrenamiento con la diversión y valores de las artes marciales.</p>  
+
+    </section>
+
+    <section id="comparison"> 
+
+        <div>
+            <p>Pasarás de esto:</p>
+            <img style="width: 400px; height: 400px;" src="imgs/kick.jpg" alt="el luis cayendo jaja que pringao">
+        </div>
+
+        <div>
+            <p>A esto:</p>
+            <img style="width: 400px; height: 400px;" src="imgs/kick2.jpeg" alt="el luis haciendo mate en la canasta pequeña de la marina">
+        </div>
+
+    </section>
+
+    <section id="habilities">
+
+        <p style="font-weight: bold; font-style: italic; margin-bottom: 2em; ">¿Qué obtendrás de nuestras clases?</p>
+
+        <div>
+            <ul style="margin: 0 2em;">
+                <li>Mejora de CONDICIÓN FÍSICA</li>
+                <li>Habilidades de AUTODEFENSA</li>
+                <li>Desarrollo de habilidades TÉCNICAS</li>
+            </ul>
+    
+            <ul>
+                <li>Fortalecimiento MENTAL</li>
+                <li>Mejora en COMUNIDAD</li>
+                <li>DIVERSIÓN y MOTIVACIÓN cuando aprendes</li>
+            </ul>
+        </div>
+    </section>
+
+</article>
     
 </body>
 </html>
